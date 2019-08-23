@@ -1,0 +1,26 @@
+<html>
+
+<head>
+     <meta http-equiv="content-type" charset="utf-8">
+</head>
+<body>
+<form action="maybe.php" method="post">
+検索内容<input type="text" name="search" id="search" placeholder="再帰" >
+<br/>もしかして<input type="text" name="maybe" id="maybe"  placeholder="再帰" >
+<br/><input type="submit" value="送信">
+</form>
+<button id="button">自動入力</button>
+<script>
+var button = document.getElementById("button");
+button.addEventListener("click", function(e) {
+e.preventDefault();
+var resultForm = document.getElementById("search");
+resultForm.value = "エロ画像";
+var resultForm = document.getElementById("maybe");
+resultForm.value = "変態";
+});
+</script>
+
+
+</body>
+</html>
